@@ -1,0 +1,1042 @@
+@import "./animations.scss";
+// color variables
+$darkBgColor: #2d2c3e;
+$lightBgColor: #FFF;
+$textGrey:#AAA;
+$grey:#708090;
+$darkGrey:#666;
+$blueGrey:#454762;
+$pink:#e7a9ff;
+$red:#ff014f;
+$lightBlue:#0795d6;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.code{
+    color: $textGrey;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-weight: 600;
+    text-align: justify;
+  }
+.home{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.dark {
+    height: 100%;
+  
+.background{
+  padding: 20rem;
+    background-color: $darkBgColor;
+}
+.text{
+    color: white;
+}
+  }
+.light {
+    height: 100%;
+    
+    .background{
+      padding: 20rem;
+        background-color: $lightBgColor;
+    }
+    .text{
+        color: $darkBgColor;
+    }
+  }
+.logo{
+position: fixed;
+left: 3rem;
+top:0.8rem;
+z-index:3;
+img{
+  border-radius: 0;
+    width: 15%;
+    padding: 1rem;
+}
+  }
+.sound{
+    position: fixed;
+left:8rem;
+bottom:3rem;
+z-index:10;
+.playBtn{
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+   
+}
+.playing{
+  animation: flo 3s infinite alternate;
+}
+  }
+.homeBtn {
+    position: fixed;
+   margin-left: -2.5rem;
+        left:50%;
+        top:1rem;
+        z-index:10;
+        width: 5rem;
+        height: 5rem;
+  }
+ .homeBtn:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+  .content {
+    border-radius: 50%;
+    height: 90%;
+    margin: 10%;
+    position: absolute;
+    width: 90%;
+    vertical-align: middle;
+    z-index: 5000;
+  }
+  .homeBtn:hover .effect-1,
+  .homeBtn:hover .effect-2 {
+    display: block;
+  }
+  .effect-1,
+  .effect-2 {
+    border-radius: 50%;
+    display: none;
+    mix-blend-mode: multiply;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    z-index: 3000;
+  }
+  .effect-1 {
+    animation: rotate 1.8s linear infinite;
+    background: cyan;
+  }
+  .effect-2 {
+    animation: rotate 1.2s linear reverse infinite;
+    background: $pink;
+  }
+  .exercise {
+    background-image: linear-gradient(to top, white 0%, $lightBlue 100%);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    animation: breathing 5s linear infinite;
+    a{
+       color: white;
+       font-size: 2rem;
+        padding-left: 8px;
+    }
+  }
+.themeToggle{
+    position: fixed;
+right: 2rem;
+top: 2rem;
+z-index:3;
+  }
+.banner{
+    display: flex;
+ 
+ .leftBanner{
+  width: 50%;
+  min-height: 50vh;
+  position: relative;
+  .aboutMe{
+    padding: 3rem;
+    position: absolute;
+    top:15%;
+    right: 0;
+    width: 80%;
+    min-height: 50vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 2px 0 2px 2px; 
+    .sayHi{
+      padding-top: 1rem;
+      color: $textGrey;
+      font-size: 3rem;
+    .name{
+    color: $red;
+    font-size: 5rem;
+    font-weight: 700;
+      }
+    }
+    .typingText{
+      padding-top: 2rem;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+ }
+ .rightBanner{
+  width: 50%;
+  min-height: 50vh;
+  position: relative;
+  .bannerImg{
+    position: absolute;
+    top:15%;
+    left: 0;
+    width: 80%;
+    min-height: 50vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 2px 2px 2px 0; 
+#water{
+width: 600px;
+height: 600px;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    border-radius: 59% 41% 66% 34% / 40% 30% 70% 60%; 
+    box-shadow: inset 10px 20px 30px rgba(0,0,0,0.5),
+                      10px 10px 20px rgba(0,0,0,0.3),
+                      15px 15px 30px rgba(0,0,0,0.1),
+                inset -10px -10px 15px rgba(255,255,255,0.8);
+    animation: waterMove 5s linear infinite alternate;
+    overflow: hidden;
+    img{
+      border-radius: 0;
+      position: relative; 
+    width: 100%;
+   padding-top: 50px;
+   padding-left: 20px;
+    }
+  }
+
+  }
+ }
+}
+.skills{
+  display: flex;
+ width: 80vw;
+  .design,.develop{
+    margin: 2rem;
+    width: 100%;
+    min-height: 50vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 2px;
+    backdrop-filter: blur(10px);
+  }
+  .design:hover, .develop:hover{
+    animation: zoom 1s forwards;
+    box-shadow: 0 0 15px $lightBlue;
+  }
+
+  .title{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 5%;
+      border-radius: 0;
+    }
+    h2{
+      margin: 1rem;
+      font-size: 2rem;
+      color: $textGrey;
+      padding-top: 1rem;
+    }
+  }
+  .skillContent{
+margin: 0 3rem;
+  p{
+    font-size: 1.2rem;
+  }
+  h2{
+    color: $darkGrey;
+    padding-top: 1rem;
+  }
+  ul>li{
+    font-size: 1.2rem;
+    color: $textGrey;
+  }
+  .toolLogo{
+    display: flex;
+    justify-content:space-around;
+    img{
+      height: 5rem;
+      border-radius: 0;
+    }
+  }
+}
+}
+.education{
+  width: 50vw;
+  height: 66vh;
+  border-style: solid ;
+  border-color:$textGrey;
+  border-width: 0px 0px 0px 5px; 
+  position: relative;
+  .eduBox{
+    margin-left: 60px;
+    margin-bottom: 3rem;
+    width: 50vw;
+    height: 20vh;
+    border: 1px solid $textGrey;
+    box-shadow: 0 0 15px $textGrey;
+    backdrop-filter: blur(10px);
+  }
+ .eduBox:hover{
+    box-shadow: 0 0 15px $lightBlue;
+  }
+  .eduLine1{
+    position: absolute;
+    top: 10vh;
+    width: 3vw;
+    height: 20vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 5px 0px 0px 0px; 
+  }
+  .eduLine2{
+    position: absolute;
+    top: 33vh;
+    width: 3vw;
+    height: 20vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 5px 0px 0px 0px; 
+  }
+  .eduLine3{
+    position: absolute;
+    top: 56vh;
+    width: 3vw;
+    height: 20vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 5px 0px 0px 0px; 
+  }
+  .circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left:-12.5px;
+    top:-12.5px;
+    border: 5px solid $textGrey;
+    border-radius: 50%;
+    background-color: $lightBgColor;
+    box-shadow: 0 0 15px $textGrey;
+  }
+}
+  .infoCard{
+  padding: 2rem;
+  display: flex;
+  .text{
+  h3{
+    font-size: 2rem;
+    color: $textGrey;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  h4{
+    color: $textGrey;
+    padding: 1rem;
+  }
+  p{
+    font-size: 1rem;
+    color: $textGrey;
+    padding: 1rem;
+  }
+}
+img{
+  border-radius: 0;
+  height: 100px;
+  animation: flo 5s infinite alternate;
+}
+  }
+.project{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px; /* Adjust the gap between items as needed */
+}
+  .projectCard{
+  border: 2px solid $textGrey;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  .imageContainer {
+   width: 500px; /* Adjust the height as needed */
+   height: 350px;
+   overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 5s ease-in-out;
+    padding-bottom: 1rem;
+    }
+   img:hover{
+    object-position: bottom center;
+  }
+  }
+  h2{
+    color: $grey;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  h4{
+    color: $red;
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .projectLinks{
+    display: flex;
+    justify-content: center;
+    a{
+      margin: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      width: 43px;
+      height: 43px;
+      background-color: $darkBgColor;
+      border-radius: 50%;
+    }
+    a:hover{
+      color: $red;
+    }
+  }
+  }
+  .projectCard:hover{
+  box-shadow: 0 0 15px $lightBlue;
+  }
+  #mouse {
+    position: fixed;
+    margin-top: 20rem;
+    right: 3%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 80px;
+    background-color: $textGrey;
+    border-radius: 50px;
+    box-shadow: 0 0 15px $red;
+  }
+  #mouse::before{
+    content: '';
+    position: fixed;
+    top: 6px;
+right: 22px;
+width: 5px;
+height: 15px;
+background-color: $lightBgColor;
+    border-radius: 5px;
+  }
+  #mouse::after{
+    content: '';
+    position: fixed;
+    top: 24px;
+right: 2px;
+width: 46px;
+height: 2px;
+background-color: $lightBgColor;
+
+  }
+.socialMedia{
+    position: fixed;
+         left:50%;
+         bottom:3rem;
+         z-index:10;
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      ul li {
+        list-style: none;
+        margin: 0 15px;
+      }
+      ul li a {
+        position: relative; 
+        display: block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background: $darkBgColor;
+        border-radius: 50%;
+        font-size: 30px;
+        color: $darkGrey;
+        transition: .5s;
+      }
+      
+      ul li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: $lightBlue;
+        transition: .5s;
+        transform: scale(.9);
+        z-index: -1;
+      }
+      ul li a:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px $lightBlue;
+      }
+      ul li a:hover {
+        color: $lightBlue;
+        box-shadow: 0 0 5px $lightBlue;
+        text-shadow: 0 0 5px $lightBlue;
+      }
+  }
+.contact{
+  display: flex;
+  .contactLeft{
+    margin: 2rem;
+    width: 50%;
+    min-height: 50vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 2px;
+    backdrop-filter: blur(10px);
+    padding:3rem ;
+    img{
+      border-radius: 1rem;
+    }
+    h3{
+      padding-top: 3rem;
+      color:$red;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    h4{
+      padding:  1rem 0;
+      color:$textGrey;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    p{
+      color:$textGrey;
+      font-size: 1.2rem;
+      span{
+        font-weight: 800;
+      }
+    }
+   
+  }
+  .contactLeft:hover, .contactRight:hover{
+    box-shadow: 0 0 15px $lightBlue;
+  }
+  .contactRight{
+    margin: 2rem;
+    width: 50%;
+    min-height: 50vh;
+    border-style: solid ;
+    border-color:$textGrey;
+    border-width: 2px;
+    backdrop-filter: blur(10px);
+    padding:3rem ;
+    form{
+      width: 100%;
+ 
+      p{
+        color:$textGrey;
+        font-size: 1.2rem;
+       
+      }
+      input{
+        font-size: 1.8rem;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: 2px solid $textGrey;
+      }
+      textarea{
+        font-size: 1.8rem;
+        border-radius: 5px;
+        border: 2px solid $textGrey;
+      }
+      input:focus, textarea:focus{
+        outline: none;
+        border: 2px solid $lightBlue;
+        box-shadow: 0 0 15px $lightBlue;
+      }
+      button{
+        height: 3.5rem;
+        width: 50%;
+        color: $red;
+        background-color: $blueGrey;
+        border-radius: 5px;
+        border: none;
+        margin-left: 25%;
+        font-size: 1.5rem;
+      }
+      button:hover{
+        border: 2px solid $red;
+        box-shadow: 0 0 15px $red;
+      }
+      .contentLine{
+        display: flex;
+        flex-direction: column;
+      padding-bottom: 2rem;
+      }
+      .contentCol{
+        display: flex; 
+        justify-content:space-between;
+        input{
+        width: 20rem;
+        }
+      }
+      .error{
+        color: $red;
+      }
+      .success{
+        color: green;
+      }
+    }
+  }
+}
+  
+  @media screen and (max-width: 960px) {
+    .dark, .light {
+      .background{
+        max-width: 960px;
+        padding: 0;
+      }
+    }
+    .themeToggle{   
+      right: 6rem;
+        }
+    .sound{
+      left:5rem;
+      bottom:2rem;
+        }
+        .banner{
+          display: flex;
+          flex-direction: column;
+          .leftBanner{
+           width: 85%;
+           .aboutMe{
+             top:40%;
+             left: 0;
+             width: 100%;
+             border-width: 0; 
+             .typingText{
+               font-size: 2.5rem;
+             }
+           }
+          }
+          .rightBanner{
+           width: 80%;
+           .bannerImg{
+             top:2rem;
+             left: 20rem;
+             width: 80%;
+             min-height: 40vh; 
+             border: 0;
+         #water{
+         width: 400px;
+         height: 400px;
+             position: absolute;
+             top:2rem;
+           }
+         
+           }
+          }
+         }
+         .skills{
+           display: flex;
+         flex-direction: column;
+          width: 80vw;
+          margin-top: 12rem;
+           .design,.develop{
+            margin-left: 0;
+             margin-bottom: 6rem;
+           }
+           .skillContent{
+           .toolLogo{
+             img{
+               height: 5rem;
+               padding-bottom: .5rem;
+             }
+           }
+         }
+         }
+         .education{
+           width: 90vw;
+           height: 91vh;
+           margin-left: 30px;
+           margin-top: 14rem;
+           margin-bottom: 5rem;
+           .eduBox{
+             width: 80vw;
+             height: 28vh;
+             margin-left: 2rem;
+           }
+           .eduLine1{
+            top: 15vh;
+          }
+          .eduLine2{
+            top: 45vh;
+          }
+          .eduLine3{
+            top: 78vh;
+          }
+         }
+         .infoCard{
+           padding-bottom: 5rem;
+           .text{
+           h3{
+             font-size: 1.5rem;
+             padding: .5rem;
+           }
+           h4{
+             padding: .5rem;
+           }
+           p{
+             font-size: 1.2rem;
+             padding: .5rem;
+           }
+         }
+         }
+         .contact{
+           display: flex;
+           flex-direction: column;
+           max-width: 90vw;
+           .contactLeft{
+             margin:14rem 2rem;
+             width: 90%;
+             padding:2rem;
+             img{
+               width: 100%;
+             }
+           }
+           .contactRight{
+             margin-left: 2rem;
+             width: 90%;
+             padding:2rem ;
+             margin-bottom: 8rem;
+             form{
+               width: 100%;
+               .contentCol{
+                 input{
+                 width: 27rem;
+                 }
+               }
+             }
+           }
+         }
+         .project{
+           grid-template-columns: repeat(1, 1fr);
+           margin-top: 14rem;
+           margin-bottom: 10rem;
+         }
+         .projectCard{
+           margin-left: -2rem;
+           .imageContainer {
+             width: 700px; 
+           }
+         }
+         #mouse {
+         margin-top: 6rem;
+         right:1.5rem
+         }    
+  
+}
+  @media screen and (max-width: 800px) {
+    .dark, .light {
+      .background{
+        max-width: 740px;
+        padding: 0;
+      }
+    }
+    .themeToggle{   
+      right: 6rem;
+        }
+    .sound{
+      left:5rem;
+      bottom:2rem;
+        }
+        .banner{
+          display: flex;
+          flex-direction: column;
+          .leftBanner{
+           width: 100%;
+           .aboutMe{
+             top:40%;
+             left: 0;
+             width: 100%;
+             border-width: 0; 
+             .typingText{
+               font-size: 2.5rem;
+             }
+           }
+          }
+          .rightBanner{
+           width: 60%;
+           .bannerImg{
+             top:-24rem;
+             left: 22rem;
+             width: 60%;
+             min-height: 40vh; 
+             border: 0;
+         #water{
+         width: 250px;
+         height: 250px;
+             position: absolute;
+             top:-10rem;
+           }
+         
+           }
+          }
+         }
+         .skills{
+           display: flex;
+         flex-direction: column;
+          width: 80vw;
+          margin-top: 12rem;
+           .design,.develop{
+            margin-left: 0;
+             margin-bottom: 6rem;
+           }
+           .skillContent{
+           .toolLogo{
+             img{
+               height: 4rem;
+               padding-bottom: .5rem;
+             }
+           }
+         }
+         }
+         .education{
+           width: 90vw;
+           height: 91vh;
+           margin-left: 30px;
+           margin-top: 14rem;
+           margin-bottom: 5rem;
+           .eduBox{
+             width: 80vw;
+             height: 28vh;
+             margin-left: 2rem;
+           }
+           .eduLine1{
+            top: 15vh;
+          }
+          .eduLine2{
+            top: 45vh;
+          }
+          .eduLine3{
+            top: 78vh;
+          }
+         }
+         .infoCard{
+           padding-bottom: 5rem;
+           .text{
+           h3{
+             font-size: 1.5rem;
+             padding: .5rem;
+           }
+           h4{
+             padding: .5rem;
+           }
+           p{
+             font-size: 1.2rem;
+             padding: .5rem;
+           }
+         }
+         }
+         .contact{
+           display: flex;
+           flex-direction: column;
+           max-width: 90vw;
+           .contactLeft{
+             margin:14rem 3rem;
+             width: 90%;
+             padding:2rem;
+             img{
+               width: 100%;
+             }
+           }
+           .contactRight{
+             margin-left: 3rem;
+             width: 90%;
+             padding:2rem ;
+             margin-bottom: 8rem;
+             form{
+               width: 100%;
+               .contentCol{
+                 input{
+                 width: 20rem;
+                 }
+               }
+             }
+           }
+         }
+         .project{
+           grid-template-columns: repeat(1, 1fr);
+           margin-top: 14rem;
+           margin-bottom: 10rem;
+         }
+         .projectCard{
+           margin-left: 0;
+           .imageContainer {
+             width: 550px; 
+           }
+         }
+         #mouse {
+         margin-top: 6rem;
+         right:3.5rem
+         }
+}
+@media screen and (max-width: 600px) {
+  .home{
+  display: flex;
+  justify-content:space-around;
+  }  
+  .sound{
+    position: fixed;
+left:5rem;
+bottom:2rem;
+  }
+  .dark, .light {
+  .background{
+    max-width: 460px;
+    padding: 0;
+  }
+}
+  .themeToggle{   
+right: 5rem;
+  }
+  .banner{
+ display: flex;
+ flex-direction: column;
+margin-left: 5rem;
+ .leftBanner{
+  width: 100%;
+  .aboutMe{
+    top:40%;
+    left: 0;
+    width: 100%;
+    border-width: 0; 
+    .typingText{
+      font-size: 2.5rem;
+    }
+  }
+ }
+ .rightBanner{
+  width: 60%;
+  .bannerImg{
+    top:-24rem;
+    left: 14rem;
+    width: 60%;
+    min-height: 40vh; 
+    border: 0;
+#water{
+width: 250px;
+height: 250px;
+    position: absolute;
+    top:-10rem;
+  }
+
+  }
+ }
+}
+.skills{
+  display: flex;
+flex-direction: column;
+ width: 100vw;
+ margin-top: 12rem;
+  .design,.develop{
+    margin-left: 5.5rem;
+    margin-bottom: 6rem;
+  }
+  .skillContent{
+  .toolLogo{
+    img{
+      height: 4rem;
+      padding-bottom: .5rem;
+    }
+  }
+}
+}
+.education{
+  width: 100vw;
+  height: 66vh;
+  margin-left: 65px;
+  .eduBox{
+    width: 90vw;
+    height: 31vh;
+  }
+}
+.infoCard{
+  padding-bottom: 5rem;
+  .text{
+  h3{
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  h4{
+    padding: .5rem;
+  }
+  p{
+    font-size: 1.2rem;
+    padding: .5rem;
+  }
+}
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  .contactLeft{
+    margin:15rem 7.5rem;
+    width: 90%;
+    padding:2rem;
+    img{
+      width: 100%;
+    }
+  }
+  .contactRight{
+    margin-left: 7.5rem;
+    width: 90%;
+    padding:2rem ;
+    margin-bottom: 5rem;
+    form{
+      width: 100%;
+      .contentCol{
+        input{
+        width: 15rem;
+        }
+      }
+    }
+  }
+}
+.project{
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 13rem;
+  margin-bottom: 10rem;
+}
+.projectCard{
+  margin-left: 11rem;
+  .imageContainer {
+    width: 400px; 
+  }
+}
+#mouse {
+  margin-top: 5rem;
+  right: -1rem;
+}
+}

@@ -1,0 +1,60 @@
+@keyframes waterMove{
+    25%{
+        border-radius: 26% 74% 31% 69% / 44% 41% 59% 56% ;
+    }
+    50%{
+        border-radius: 60% 40% 70% 30% / 44% 41% 59% 56% ;
+    }
+    100%{
+        border-radius: 80% 20% 49% 51% / 26% 64% 36% 74%  ;
+    }
+}
+@keyframes rotate {
+    0% {
+      top: 0;
+      left: 8%;
+    }
+    25% {
+      top: 8%;
+      left: 0%;
+    }
+    50% {
+      top: 16%;
+      left: 8%;
+    }
+    75% {
+      top: 8%;
+      left: 16%;
+    }
+    100% {
+      top: 0;
+      left: 8%;
+    }
+  }
+  @keyframes zoom {
+    0% {
+     scale: 1;
+    }
+    100% {
+      scale: 1.1;
+    }
+  }
+  @keyframes flo{
+    0%{
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  @keyframes breathing{
+    0%{
+      box-shadow: 0px 0px 0px 0px rgba(22, 167, 234, 0.75);
+    }
+    50%{
+      box-shadow: 0px 0px 10px 10px rgba(22, 167, 234, 0.75);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px rgba(22, 167, 234, 0.75);
+    }
+  }
