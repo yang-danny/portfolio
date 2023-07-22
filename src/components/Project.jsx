@@ -31,7 +31,7 @@ const Project = () => {
     setBgColor('#2d2c3e')
     else
     setBgColor('#FFF')
-    }, [])
+    }, [theme])
   return (
     <div className={theme}>
     <motion.div
