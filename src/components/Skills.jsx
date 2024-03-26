@@ -156,7 +156,7 @@ const Skills = () => {
         transition={{ type: 'spring', duration:2, delay:1 }}  className="develop">
         <div className="title">
         <img src={code} alt="" />
-        <h2 >Front-ent Developer</h2>
+        <h2 >Full Stack Developer</h2>
         </div>
         <div className="skillContent">
         <p className="code">Deliver secure, fast, and easy-to-scale Web-flow & Mobile solutions. By implementing integrations & custom development ensure the highest usability and performance standards will be met.
