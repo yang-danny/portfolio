@@ -98,9 +98,11 @@ const Experience = () => {
       animate={{ x: 0,opacity: 1 }} 
       transition={{ type: 'spring', duration:2, delay:1 }} className='eduBox'>
       <InfoCard 
-      title='IT Support' 
+      title='Web Developer & IT Support' 
       subTitle='Side By Side Advocacy - (2021 - Present)' 
-      des='Reporting to the EO, the purpose of this role is to troubleshoot and resolve endpoint issues, install and support the systems, and assist with the day-to-day operations of Side By Side Advocacy business initiatives, and IT infrastructure.' 
+      des='Designed and developed a user-friendly new version of the official website, and leveraged expertise in UI/UX design to increase user engagement by 40%.
+      Oversee and maintain Side By Side Advocacy website, delight customers and deliver performance, scalability, and reliability.
+      Provide comprehensive IT support and troubleshooting for Side By Side Advocacy IT infrastructure.' 
       src={itsupport} />
       </motion.div>
       <motion.div
@@ -108,9 +110,9 @@ const Experience = () => {
       animate={{ x: 0,opacity: 1 }} // Ending position at the top of the viewport
       transition={{ type: 'spring', duration:2, delay:1.5 }} className='eduBox'>
       <InfoCard 
-      title='Web Developer' 
+      title='Full Stack Developer' 
       subTitle='Hiper Pty Ltd - (2014 - 2022)' 
-      des='Responsible for Hiper website’s appearance, making the website’s layout and integrating applications, graphics, and other content as both front-end and back-end. Translate Hiper business needs into client-friendly functions that will expand the website’s influence and achieve digital goals.' 
+      des='Collaborated with the technical team, responsible for delivering cross-functional, engaging designed and high-performing B2C eCommerce websites for Hiper, resulting in a significant increase in user clicks and boosting annual sales by over 30%.' 
       src={webdeveloper} />
       </motion.div>
       <motion.div
@@ -120,7 +122,8 @@ const Experience = () => {
       <InfoCard 
       title='System Administrator' 
       subTitle='Enovo Pty Ltd - (2011 - 2014)' 
-      des='Responsible for providing a reliable work environment for Enovo from the servers and network performance to security and all other areas that keep IT systems running smoothly. Design and apply e-commerce website maintenance and troubleshooting to achieve Enovo marketing strategy.' 
+      des='Monitored performance, performed troubleshooting, and maintained Enovo B2C eCommerce website, resulting in a 20% reduction in website crashes and downtime.
+      Provided technical support and troubleshooting services to employees and customers, both on-site and via phone support.' 
       src={admin} />
       </motion.div>
    </motion.div>

@@ -159,19 +159,20 @@ const Skills = () => {
         <h2 >Front-ent Developer</h2>
         </div>
         <div className="skillContent">
-        <p className="code">Deliver secure, fast, and easy-to-scale Webflow 
-        front-end solutions. By implementing integrations & custom development ensure the highest usability and performance standards will be met.
+        <p className="code">Deliver secure, fast, and easy-to-scale Web-flow & Mobile solutions. By implementing integrations & custom development ensure the highest usability and performance standards will be met.
         </p>
-        <h2>Tech Stack</h2>
+        <h2>Tech Stacks</h2>
         <ul className="code">
-            <li>HTML5</li>
-            <li>CSS3/SASS/Bootstrap/Tailwind/MUI</li>
-            <li>JavaScript/TypeScript</li>
-            <li>React/Redux</li>
-            <li>APIs/REST/Firebase</li>
-            <li>Jest/Mocha/Vanilla</li>
-            <li>Git/Github</li>
-            <li>Jira/Slack/Trello</li>
+            <li>HTML5, CSS3, SASS, Bootstrap, Tailwind, StyleSheet and NativeWind</li>
+            <li>JavaScript and TypeScript</li>
+            <li>React, React Native, Expo and Redux</li>
+            <li>Webpack, npm and Vite</li>
+            <li>REST APIs, GraphQL and Firebase</li>
+            <li>Node, Express, Apollo, NEXT and Nest</li>
+            <li>SQL Server, PostgreSQL, MySQL and MongoDB</li>
+            <li>Unit test, Jest and Mocha</li>
+            <li>Git and Github</li>
+            <li>Jira, Slack and Trello</li>
         </ul>
         <h2>Tools</h2>
         <div className="toolLogo">

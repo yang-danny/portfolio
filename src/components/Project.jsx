@@ -14,6 +14,7 @@ import hiper from '../assets/project/hiper.png'
 import fitness from '../assets/project/fitness.png'
 import weather from '../assets/project/weather.png'
 import candy from '../assets/project/CandyCrush.png'
+import grad_flow from '../assets/project/grad-flow.png'
 import { motion } from "framer-motion";
 import Mouse from '../subComponents/Mouse';
 
@@ -143,6 +144,17 @@ const Project = () => {
     <HomeBtn /> 
     <ThemeToggle />
     <div className='project'>
+    <motion.div
+      initial={{ x:860,opacity:0 }}     
+      animate={{ x: 0,opacity: 1 }}     
+      transition={{ type: 'spring', duration:2, delay:0.5 }}>
+    <ProjectCard name="Grad Flow Full Stack Web App" 
+    imgSrc={grad_flow} 
+    tech="HTML/SASS/React/JWT/Node.JS/Apollo/GraphQL/MongoDB" 
+    figmaLink='https://www.figma.com/file/NN6q0t9DiDhjpYqvV0IsjR/Grad-Flow?type=design&node-id=0%3A1&mode=design&t=ubHlTdt5yp9UrQ4x-1'
+    webLink='https://grad-flow-frontend.onrender.com/'
+    gitHubLink='https://github.com/yang-danny/grad-flow'/>
+    </motion.div>
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     

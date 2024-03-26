@@ -11,7 +11,7 @@ import BigTitlte from '../subComponents/BigTitle';
 const About = () => {
   const [theme] = useLocalStorage('theme')
   const [text] = useTypewriter({
-    words: [ "Front-end Developer","UX Designer","Problem Solver"],
+    words: [ "Full-Stack Developer","UI/UX Designer","Problem Solver"],
     loop: true,
     typeSpeed: 50,
     deleteSpeed: 30,
@@ -39,15 +39,7 @@ const About = () => {
             cursorColor="#ff014f"/>
         </h2>
         <h4 className="code">
-        Since beginning my journey as a Front-End & Web Developer, 
-        I possess an impressive arsenal of skills in HTML, CSS, 
-        JavaScript, React, TypeScript, Tailwind, SCSS and UX Design.
-        I excel in designing and maintaining responsive websites that 
-        offer a smooth user experience. I am also a team player who 
-        thrives in collaborating with cross-functional teams to produce
-         outstanding web applications. I'm quietly confident, naturally 
-         curious, and perpetually working on improving my problem solving 
-         skills. I believe everything is an Art when you put your consciousness in it.
+        Seasoned and solution-oriented Full Stack Developer with 6 years of experience specialising in mobile/web applications development.  Demonstrated a knack for success in conceiving and implementing innovative solutions to solve complex challenges. Passionate in continually expanding technological skill set to optimise user experiences, keeping web or app on the cutting edge. Implemented collaborative strategies within cross-functional teams to drive innovation and thrive in self-motivated settings. My goal is to continuously expand my skill set and play a key role in delivering dynamic projects that push the boundaries of project development, resulting in exceptional results. 
         </h4>
       </motion.div>
       </div>

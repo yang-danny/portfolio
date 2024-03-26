@@ -172,7 +172,14 @@ const Contact = () => {
       transition={{ type: 'spring', duration:2, delay:1 }} className="contactLeft code">
       <img src={shakehand} alt="contactImg" />
         <h3>Danny Yang</h3>
-        <h4>Front-end Developer | UX Designer </h4>
+        <ul>  
+          <li>Full-Stack developer</li>
+          <li>Software Engineer</li>
+          <li>JavaScript & TypeScript</li>
+          <li>React & Redux</li>
+          <li>Node JS & MERN Stack</li>
+          <li>UI/UX Designer</li>
+        </ul>
         <p> Phone: <span>+61 432 261 137</span></p>
         <p> Email: <span >yang_danny@hotmail.com</span></p>
       </motion.div>
