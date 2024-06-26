@@ -12,7 +12,7 @@ import ProjectCard from '../subComponents/ProjectCard';
 import SBSA from '../assets/project/SBSA.png'
 import hiper from '../assets/project/hiper.png'
 import fitness from '../assets/project/fitness.png'
-import weather from '../assets/project/weather.png'
+import fishing_club from '../assets/project/FishingClub.png'
 import candy from '../assets/project/CandyCrush.png'
 import grad_flow from '../assets/project/grad-flow.png'
 import { motion } from "framer-motion";
@@ -147,6 +147,17 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
+      transition={{ type: 'spring', duration:2, delay:2 }}>
+    <ProjectCard name="Fishing Club" 
+    imgSrc={fishing_club} 
+    tech="HTML/Tailwind/React/Clerk/Stripe/Next/APIs/MongoDB" 
+    figmaLink='https://www.figma.com/design/OLbDjjnb7LG2QuLcAz0aSA/Fishing-Club?node-id=1-4&t=XvYPlnJDxfsTXnGR-1'
+    webLink='https://fishing-club-frontend.vercel.app/'
+    gitHubLink='https://github.com/yang-danny/fishing-club-frontend'/>
+    </motion.div>
+    <motion.div
+      initial={{ x:860,opacity:0 }}     
+      animate={{ x: 0,opacity: 1 }}     
       transition={{ type: 'spring', duration:2, delay:0.5 }}>
     <ProjectCard name="Grad Flow Full Stack Web App" 
     imgSrc={grad_flow} 
@@ -185,16 +196,7 @@ const Project = () => {
     webLink='https://yang-danny.github.io/ts-fitness/'
     gitHubLink='https://github.com/yang-danny/ts-fitness'/>
     </motion.div>
-    <motion.div
-      initial={{ x:860,opacity:0 }}     
-      animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:2 }}>
-    <ProjectCard name="React Weather App" 
-    imgSrc={weather} 
-    tech="HTML/Material-UI/React(Hooks)/APIs" 
-    webLink='https://yang-danny.github.io/react-weather/'
-    gitHubLink='https://github.com/yang-danny/react-weather'/>
-    </motion.div>
+
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
