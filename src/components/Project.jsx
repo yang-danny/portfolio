@@ -147,7 +147,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:2 }}>
+      transition={{ type: 'spring', duration:2, delay:0.5 }}>
     <ProjectCard name="Fishing Club" 
     imgSrc={fishing_club} 
     tech="HTML/Tailwind/React/Clerk/Stripe/Next/APIs/MongoDB" 
@@ -158,7 +158,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:0.5 }}>
+      transition={{ type: 'spring', duration:2, delay:1 }}>
     <ProjectCard name="Grad Flow Full Stack Web App" 
     imgSrc={grad_flow} 
     tech="HTML/SASS/React/JWT/Node.JS/Apollo/GraphQL/MongoDB" 
@@ -169,7 +169,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:0.5 }}>
+      transition={{ type: 'spring', duration:2, delay:1.5 }}>
     <ProjectCard name="Side By Side Advocacy Official Website" 
     imgSrc={SBSA} 
     tech="HTML/SASS/React(Hooks)/TypeScript/Firebase" 
@@ -179,7 +179,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:1 }}>
+      transition={{ type: 'spring', duration:2, delay:2 }}>
     <ProjectCard name="Hiper eCommercial Online Website" 
     imgSrc={hiper} 
     tech="HTML/SASS/React(Hooks)/Redux/Firebase" 
@@ -189,7 +189,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }} 
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:1.5 }}>
+      transition={{ type: 'spring', duration:2, delay:2.5 }}>
     <ProjectCard name="Hiper Fitness Official Website" 
     imgSrc={fitness} 
     tech="HTML/Tailwind/React(Hooks)/TypeScript" 
@@ -200,7 +200,7 @@ const Project = () => {
     <motion.div
       initial={{ x:860,opacity:0 }}     
       animate={{ x: 0,opacity: 1 }}     
-      transition={{ type: 'spring', duration:2, delay:2.5 }}>
+      transition={{ type: 'spring', duration:2, delay:3 }}>
     <ProjectCard name="Candy Crush Game" 
     imgSrc={candy} 
     tech="HTML/SASS/React(Hooks)/LocalStorage" 
